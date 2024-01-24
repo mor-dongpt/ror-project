@@ -76,3 +76,5 @@ gem 'bootstrap-sass', '3.4.1'
 
 gem 'turbolinks'
 gem 'actioncable'
+
+gem 'foreman', github: 'ddollar/foreman'
