@@ -1,0 +1,8 @@
+<%= render "static_page/header" %>
+<div class="container-fluid">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+  <%= render "static_page/footer" %>
+  <%= debug(params) if Rails.env.development? %>
+</div>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'static_page#home'
   devise_for :users,
              controllers: {
                :sessions => "users/sessions",
@@ -13,4 +13,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  namespace :admins do
+    get "/" => "pages#home"
+    end
+  namespace :users do
+    get "/profile" => "user#show"
+  end
 end

@@ -1,0 +1,24 @@
+<div class="row col">
+  <div class="col-md-2">
+    <img class="img-thumbnail" style="width: 100px; height: 100px" src="avatar.jpg" alt="">
+  </div>
+  <div class="col-md-10">
+    <%= current_user.email %>
+  </div>
+</div>
+<br>
+<%= link_to "Edit", edit_user_registration_path, class: 'btn btn-primary' %>
+<%#= form_for current_user do |f| %>
+<%#= f.label :avatar %>
+<%#= f.file_field :avatar, class: 'form-control' %>
+<%# end %>
+<h3>Cancel my account</h3>
+
+<div><%= button_to "Cancel my account", cancel_user_registration_path, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: 'btn btn-primary' %></div>
+<div>
+  <%= link_to "Word List", class: 'btn btn-primary' %>
+</div>
+<div>
+  <%= link_to "Start Lesson", class: 'btn btn-primary' %>
+</div>
+
