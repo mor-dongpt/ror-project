@@ -78,3 +78,8 @@ gem 'turbolinks'
 gem 'actioncable'
 
 gem 'foreman', github: 'ddollar/foreman'
+
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google-oauth2'
