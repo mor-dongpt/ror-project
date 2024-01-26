@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @admins_word %>
+
+<div>
+  <%= link_to "Edit this word", edit_admins_word_path(@admins_word) %> |
+  <%= link_to "Back to words", admins_words_path %>
+
+  <%= button_to "Destroy this word", @admins_word, method: :delete %>
+</div>

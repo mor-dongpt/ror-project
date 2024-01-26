@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   namespace :admins do
+    resources :words
     get "/" => "pages#home"
     end
   namespace :users do
